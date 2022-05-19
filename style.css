@@ -475,7 +475,7 @@
 /* ================================== */
 
 .frame-3{
-    /* display: none; */
+    display: none;
     font-family: 'Roboto', sans-serif;
     width: 300px;
     height: 250px;
@@ -487,6 +487,8 @@
     color: #40078c;
     text-align: center;
     margin: 12px 0px;
+    animation: fadeIn;
+    animation-duration: 0.8s;
 }
 @keyframes slidein {
     from {
@@ -530,22 +532,66 @@
       opacity: 1;
     }
   }
+  @keyframes slidein-1 {
+    from {
+        
+            position: absolute;
+            top: 5em;
+            left: 2.5em;
+            text-align: center;
+            color: white;
+            width: 160px;
+            background: rgb(254, 142, 63);
+      /* margin-left: 50%; */
+      /* width: 50%; */
+      opacity:1;
+    }
+  
+    75% {
+      /* font-size: 20%; */
+      /* margin-left: 25%; */
+      /* width: 70%; */
+      opacity: 1;
+      background-color: transparent;
+    }
+  
+    to {
+      /* margin-left: 0%; */
+      /* width: 100%; */
+      animation-delay: 5s;
+      background-color: transparent;
+    box-shadow: 0px -12px 0px 10px #40078c;
+        border-radius: 60%;
+        margin-top: 1%;
+        cursor: pointer;
+        height: 6%;
+        border-bottom-right-radius: 65%;
+        border-bottom-left-radius: 65%;
+        position: absolute;
+        left: 4%;
+        width: 11%;
+        content: "";
+        /* transform: rotateZ(180deg); */
+      opacity: 1;
+    }
+  }
 .frame-3 h3{
     color: white;
     text-align: center;
     padding-bottom: 2em;
     margin: 0 40px;
+    animation: fadeIn;
+    animation-duration: 0.8s;
 }
 .frame-3 .title-1{
     width: 160px;
     position: absolute;
-    top: 6.5em;
+    top: 5.5em;
     left: 2.5em;
     /* text-align: center; */
     color: white;
-    background-color: #40078c;
     margin-bottom: 0.5em;
-    animation: slidein 0.8s forwards;
+    animation: fadeIn 0.5s both, slidein-1 0.5s forwards;
 }
 .frame-3 .title-2{
     /* background-color: transparent;
@@ -561,50 +607,109 @@
         width: 11%;
         content: "";
         transform: rotateZ(180deg); */
-        animation: slidein 0.8s forwards;
+        /* animation: slidein 0.8s forwards; */
 }
 .frame-3 .title-2{
     position: absolute;
-    top: 5em;
+    top: 7em;
     left: 2.5em;
     text-align: center;
     color: white;
     width: 160px;
     background: rgb(254, 142, 63);
+    animation: slidein 0.5s forwards;
 }
 /* curved text */
 .e1{
-    transform: translate(20px, 20px) rotate(-30deg);
+    transform: translate(2px, 6px) rotate(-21deg);
+    animation: slideIn;
 }
 .e2{
-    transform: translate(13px, 60px) rotate(-25deg);
+    transform: translate(33px, 0px) rotate(-12deg);
 }
 .e3{
-    transform: translate(6px, 40px) rotate(-20deg);
+    transform: translate(49px, -2px) rotate(-8deg);
 }
 .e4{
-    transform: translate(3px, 23px) rotate(-15deg);
+    transform: translate(64px, -3px) rotate(-3deg);
 }
 .e5{
-    transform: translate(2px, 14px) rotate(-10deg);
+    transform: translate(71px, -3px) rotate(-1deg);
 }
 .e6{
-    transform: translate(1px, 8px) rotate(-5deg);
+    transform: translate(90px, -2px) rotate(-2deg);
 }
 .e7{
-    transform: translate(0px, 5px) rotate(0deg);
+    transform: translate(100px, -3px) rotate(0deg);
 }
 .e8{
-    transform: translate(-1px, 8px) rotate(5deg);
+    transform: translate(115px, -2px) rotate(3deg);
 }
 .e9{
-    transform: translate(-2px, 14px) rotate(10deg);
+    transform: translate(127px, 0px) rotate(6deg);
 }
 .e10{
-    transform: translate(-3px, 25px) rotate(15deg);
+    transform: translate(141px, 3px) rotate(7deg);
+}
+
+
+.f1{
+    transform: translate(-80px, 4px) rotate(-15deg);
+}
+.f2{
+    transform: translate(-49px, -1px) rotate(-9deg);
+}
+.f3{
+    transform: translate(-35px, -2px) rotate(-7deg);
+}
+.f4{
+    transform: translate(-21px, -2px) rotate(-3deg);
+}
+.f5{
+    transform: translate(-13px, -2px) rotate(-1deg);
+}
+.f6{
+    transform: translate(6px, -4px) rotate(-2deg);
+}
+.f7{
+    transform: translate(21px, -4px) rotate(2deg);
+}
+.f8{
+    transform: translate(31px, -3px) rotate(7deg);
+}
+.f9{
+    transform: translate(46px, -1px) rotate(10deg);
+}
+.f10{
+    transform: translate(61px, 2px) rotate(16deg);
+}
+.f11{
+    transform: translate(75px, 7px) rotate(26deg);
 }
 .title-1 span{
+    font-size: 15px;
     display: inline-block;
+    position: absolute;
+    top: -1em;
+}
+.title-2 span{
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    top: -1em;
+}
+@keyframes letters{
+    from{
+        position: absolute;
+    }
+    75%{
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(20deg);
+        
+
+    }
 }
 /* .frame-3 .title-1:hover{
     background-color: transparent;
@@ -641,7 +746,8 @@
 .frame-4 img{
     position: absolute;
     top: 60px;
-    left: 117px;  
+    left: 117px;
+    animation: flipOutY 2s;  
 }
 .btn-4{
     top:200px;
@@ -663,7 +769,7 @@
 /* ================================= */
 
 .frame-5{
-    display: none;
+    /* display: none; */
     font-family: 'Roboto', sans-serif;
     width: 300px;
     height: 250px;
@@ -677,11 +783,41 @@
     left: 2em;
     top: 0.5em;
 }
-.frame-5 img{
+.frame-5 .im-1{
     position: absolute;
-    top: 60px;
-    left: 60px;  
+    top: 64px;
+    left: 64px;  
+    animation: book-1 2s; 
 }
+@keyframes book-1{
+    from{
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes book{
+    from{
+    position: absolute;
+    top: 64px;
+    left: 64px; 
+    }
+    to{
+    top: 65px;
+    left: 143px;
+    }
+}
+.frame-5 .im-2{
+    position: absolute;
+    top: 66px;
+    left: 143px;
+    animation: book 2s, flipOutY 2s;   
+}
+
 
 /* =================================== */
 .frame-6{
