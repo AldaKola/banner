@@ -3,8 +3,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@keyframes autoplay6 {
+    0% {opacity: 0.0}
+    4% {opacity: 1.0}
+    33.33% {opacity: 1.0}
+    37.33% {opacity: 0.0}
+    100% {opacity: 0.0}
+  }
+  #slideset6 > * {animation: 12s autoplay6;
+    position: absolute; top: 0; left: 0; opacity: 0.0}
+#slideset6 > :nth-child(1) {animation-delay: 0s}
+#slideset6 > :nth-child(2) {animation-delay: 4s}
+#slideset6 > :nth-child(3) {animation-delay: 6s}
+#slideset6 > :nth-child(4) {animation-delay: 8s}
+#slideset6 > :nth-child(5) {animation-delay: 10s}
+#slideset6 > :nth-child(6) {animation-delay: 12s}
+
 .frame-1{
-    display: none;
+    /* display: none; */
     font-family: 'Roboto', sans-serif;
     position: absolute;
     width: 300px;
@@ -16,9 +33,6 @@
 .shapes{
     position: absolute;
     top: -13px;
-    display: none;
-    animation: pulse;
-    animation-duration: 2s;
 }
 .frame-1 h3{
 
@@ -28,7 +42,7 @@
 }
 .frame-1 h1{
     text-align: center;
-    font-size: 35px;
+    font-size: 29px;
     color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -42,6 +56,7 @@
     height: 10px; 
     background-color: #0bf6fd;
     border-radius: 50%;
+    animation: pulse 2s;
 }
 .circle{
     position: absolute;
@@ -51,6 +66,7 @@
     height: 8px; 
     background-color: #0bf6fd;
     border-radius: 50%;
+    animation: pulse 2s;
 }
 .circle-1{
     position: absolute;
@@ -60,6 +76,7 @@
     height: 8px; 
     background-color: #0bf6fd;
     border-radius: 50%;
+    animation: pulse 2s;
 }
 .dark-circle{
     position: absolute;
@@ -69,6 +86,7 @@
     height: 5px; 
     background-color: #4f2f75;
     border-radius: 50%;
+    animation: pulse 2s;
 }
 .dark-circle-1{
     position: absolute;
@@ -78,6 +96,7 @@
     height: 5px; 
     background-color: #4f2f75;
     border-radius: 50%;
+    animation: pulse 2s;
 }
 .rectangel-1{
     position: absolute;
@@ -86,7 +105,8 @@
     width: 18px;
     height: 3px;
     background: #0bf6fd;
-    transform: rotate(150deg);   
+    transform: rotate(150deg);  
+    animation: pulse 2s; 
 }
 .rectangel-2{
     position: absolute;
@@ -95,7 +115,8 @@
     width: 18px;
     height: 3px;
     background: #0bf6fd; 
-    transform: rotate(45deg); 
+    transform: rotate(45deg);
+    animation: pulse 2s; 
 }
 .rectangel-3{
     position: absolute;
@@ -105,6 +126,7 @@
     height: 3px;
     background: #0bf6fd; 
     transform: rotate(65deg);  
+    animation: pulse 2s;
 }
 .rectangel-4{
     position: absolute;
@@ -113,16 +135,18 @@
     width: 18px;
     height: 3px;
     background: #0bf6fd; 
-    transform: rotate(315deg); 
+    transform: rotate(315deg);
+    animation: pulse 2s; 
 }
 .rectangel-5{
     position: absolute;
-    top: 106px;
-    left: 260px;
+    top: 97px;
+    left: 244px;
     width: 18px;
     height: 3px;
     background: #0bf6fd;
-    transform: rotate(150deg);   
+    transform: rotate(150deg);
+    animation: pulse 2s;   
 }
 .dark-rec-1{
     position: absolute;
@@ -132,6 +156,7 @@
     height: 4px;
     background: #4f2f75;
     transform: rotate(310deg);  
+    animation: pulse 2s;
 }
 .dark-rec-2{
     position: absolute;
@@ -141,6 +166,7 @@
     height: 4px;
     background: #4f2f75;
     transform: rotate(170deg);  
+    animation: pulse 2s;
 }
 .dark-rec-3{
     position: absolute;
@@ -149,7 +175,8 @@
     width: 14px;
     height: 4px;
     background: #4f2f75;
-    transform: rotate(85deg);   
+    transform: rotate(85deg);  
+    animation: pulse 2s; 
 }
 .dark-rec-4{
     position: absolute;
@@ -158,7 +185,8 @@
     width: 14px;
     height: 4px;
     background: #4f2f75;
-    transform: rotate(105deg);    
+    transform: rotate(105deg);   
+    animation: pulse 2s; 
 }
 .dark-rec-5{
     position: absolute;
@@ -168,11 +196,12 @@
     height: 4px;
     background: #4f2f75;
     transform: rotate(35deg); 
+    animation: pulse 2s;
 }
 .curved-1{
     position: absolute;
-    top: 175px;
-    left: 90px;
+    top: 210px;
+    left: 35px;
     width: 18px;
     height: 8px;
     background-color: transparent;
@@ -181,6 +210,7 @@
     border-bottom: 2.5px solid #04bbd4;
     border-radius: 0px 0px 150px 150px;
     transform: rotate(340deg);
+    animation: pulse 2s;
 }
 .curved-2{
     position: absolute;
@@ -194,6 +224,7 @@
     border-bottom: 2.5px solid #04bbd4;
     border-radius: 0px 0px 150px 150px;
     transform: rotate(250deg);
+    animation: pulse 2s;
 }
 .curved-3{
     position: absolute;
@@ -207,6 +238,7 @@
     border-bottom: 2.5px solid #04bbd4;
     border-radius: 0px 0px 150px 150px;
     transform: rotate(240deg);
+    animation: pulse 2s;
 }
 .curved-4{
     position: absolute;
@@ -220,6 +252,7 @@
     border-bottom: 2.5px solid #04bbd4;
     border-radius: 0px 0px 150px 150px;
     transform: rotate(310deg);
+    animation: pulse 2s;
 }
 .curved-5{
     position: absolute;
@@ -233,6 +266,7 @@
     border-bottom: 2.5px solid #04bbd4;
     border-radius: 0px 0px 150px 150px;
     transform: rotate(45deg);
+    animation: pulse 2s;
 }
 .light-curve-1{
     position: absolute;
@@ -246,6 +280,7 @@
     border-bottom: 2px solid #1ee9ff;
     border-radius: 0px 0px 150px 150px;
     transform: rotate(245deg);
+    animation: pulse 2s;
 }
 .light-curve-2{
     position: absolute;
@@ -259,6 +294,7 @@
     border-bottom: 2px solid #1ee9ff;
     border-radius: 0px 0px 150px 150px;
     transform: rotate(40deg);
+    animation: pulse 2s;
 }
 .light-curve-3{
     position: absolute;
@@ -272,6 +308,7 @@
     border-bottom: 2px solid #1ee9ff;
     border-radius: 0px 0px 150px 150px;
     transform: rotate(45deg); 
+    animation: pulse 2s;
 }
     
 @-webkit-keyframes pulse {
@@ -307,18 +344,19 @@
   .animate__pulse {
     -webkit-animation-name: pulse;
     animation-name: pulse;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
 /* ============================== */
 
 
 
 .frame-2{
-    display: none;
+    /* display: none; */
     font-family: 'Roboto', sans-serif;
     /* position: absolute; */
     width: 300px;
+    position: absolute;
     height: 250px;
     background:rgb(144, 94, 220);
     border: 2px solid rgba(78,0,141,255);
@@ -328,154 +366,246 @@
     text-align: center;
     padding: 0.5em;
     animation: fadeOut;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
 }
 
 .frame-2 p{
     color: white;
     text-align: center;
     animation: fadeOut;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     
 }
 .frame-2 img{
     padding-left: 3em;
     animation: fadeOut;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
 }
-.arrows{
+.wrapper{
     display: grid;
-    display: none;
-    animation: fadeOut;
-    animation-duration: 2s;
+    grid-template-rows: 1fr 1fr;
+    place-items: end;
+    width: 50px;
+    height: 50px;
+    margin-left: 21px;
+    margin-top: -186px;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    padding: 10px;
 }
-.arrows .arrow-1{
-    width: 12px;
-    height: 20px;
-    border-right: 4px solid #40078c;
-    border-bottom: 4px solid #40078c;
-    transform: rotate(38deg);
-    position: absolute;
-    top: 120px;
-    left: 110px
-}
-
-
-/* .arrow-1, .arrow-2, .arrow-3, .arrow-4{
+.wrapper-2{
     display: grid;
-   grid-template-columns: repeat(2, 1fr);
-} */
+    place-items: end;
+    width: 50px;
+    height: 50px;
+    margin-left: 123px;
+    margin-top: -66px;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    padding: 10px;
+}
+.wrapper-3{
+    display: grid;
+    /* place-items: end; */
+    width: 50px;
+    height: 50px;
+    margin-left: -72px;
+    margin-top: 92px;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    padding: 10px;
+}
+.wrapper-4{
+    display: grid;
+    /* place-items: end; */
+    width: 50px;
+    height: 50px;
+    margin-left: 18px;
+    margin-top: -50px;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    padding: 10px;
+}
+.tick{
+    position: relative;
+    height: 8px;
+    width: 21px;
+    margin-left: 93px;
+    margin-top: -121px;
+    transform-origin: 0% 0%;
+    background: #40078c;
+    animation: tick-animation 2s;
+}
+.tick::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 8px;
+    height: 30px;
+    transform-origin: 0% 100%;
+    background: inherit;
+    animation: tick-before-animation 2s;
+}
+.tick-2{
+    position: relative;
+    height: 8px;
+    width: 21px;
+    margin-left: 93px;
+    margin-top: -125px;
+    transform-origin: 0% 0%;
+    background: #40078c;
+    animation: tick-animation 2s;
+}
+.tick-2::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 8px;
+    height: 30px;
+    transform-origin: 0% 100%;
+    background: inherit;
+    animation: tick-before-animation 2s;
+}
+
+.tick-3{
+    position: relative;
+    height: 8px;
+    width: 21px;
+    margin-left: 93px;
+    margin-top: -126px;
+    transform-origin: 0% 0%;
+    background: #40078c;
+    animation: tick-animation 2s;
+}
+.tick-3::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 8px;
+    height: 30px;
+    transform-origin: 0% 100%;
+    background: inherit;
+    animation: tick-before-animation 2s;
+}
+.tick-4{
+    position: relative;
+    height: 8px;
+    width: 21px;
+    margin-left: 93px;
+    margin-top: -128px;
+    transform-origin: 0% 0%;
+    background: #40078c;
+    animation: tick-animation 2s;
+}
+.tick-4::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 8px;
+    height: 30px;
+    transform-origin: 0% 100%;
+    background: inherit;
+    animation: tick-before-animation 2s;
+}
+@keyframes tick-animation{
+    0%,
+    20% {transform: scaleX(0); }
+    30% {transform: scaleX(1); }
+    95% {opacity: 1; }
+    100% { opacity: 0;}
+} 
+@keyframes tick-before-animation{
+    0%,
+    20% {transform: scaleY(0); }
+    45% {transform: scaleY(1); }
+}
 
 
-.arrows .block-1{
-    width: 20px;
+.wrapper-block, .wrapper-block-2, .wrapper-block-3,.wrapper-block-4{
+    animation: fadeIn 2s;
+}
+.wrapper-block .block{
+    width: 25px;
+    top: 23px;
     height: 5px;
-    left: 13px;
+    left: 145px;
     border: 2px solid rgb(215, 214, 214);
     background-color: rgb(215, 214, 214);
-    position: absolute;
-    transform: rotate(141deg);
+    position: relative;
 }
-.arrows .arrow-1 .block-2{
-    /* top: 5px; */
-    left: 15px;
-    width: 40px;
+.wrapper-block .block::after{
+    content: "";
+    background-color: rgb(215, 214, 214);
+    margin-top: 4px;
+    left: -2px;
+    width: 39px;
+    height:  5px;
+    position: absolute;
+}
+.wrapper-block-2 .block{
+    width: 25px;
+    top: 34px;
     height: 5px;
+    left: 236px;
     border: 2px solid rgb(215, 214, 214);
     background-color: rgb(215, 214, 214);
-    position: absolute;
-    transform: rotate(141deg);
+    position: relative;
 }
-.arrows .arrow-2{
-    width: 12px;
-    height: 20px;
-    border-right: 4px solid #40078c;
-    border-bottom: 4px solid #40078c;
-    transform: rotate(38deg);
+.wrapper-block-2 .block::after{
+    content: "";
+    background-color: rgb(215, 214, 214);
+    margin-top: 4px;
+    left: -2px;
+    width: 39px;
+    height:  5px;
     position: absolute;
-    top: 160px;
-    left: 110px
 }
-.arrows .arrow-2 .block-1{
-    width: 20px;
+.wrapper-block-3 .block{
+    width: 25px;
+    top: -62px;
     height: 5px;
-    left: 13px;
+    left: 145px;
     border: 2px solid rgb(215, 214, 214);
     background-color: rgb(215, 214, 214);
-    position: absolute;
-    transform: rotate(141deg);
+    position: relative;
 }
-.arrows .arrow-2 .block-2{
-    /* top: 5px; */
-    left: 15px;
-    width: 40px;
+.wrapper-block-3 .block::after{
+    content: "";
+    background-color: rgb(215, 214, 214);
+    margin-top: 4px;
+    left: -2px;
+    width: 39px;
+    height:  5px;
+    position: absolute;
+}
+.wrapper-block-4 .block{
+    width: 25px;
+    top: -67px;
     height: 5px;
+    left: 236px;
     border: 2px solid rgb(215, 214, 214);
     background-color: rgb(215, 214, 214);
-    position: absolute;
-    transform: rotate(141deg);
+    position: relative;
 }
-.arrows .arrow-3{
-    width: 12px;
-    height: 20px;
-    border-right: 4px solid #40078c;
-    border-bottom: 4px solid #40078c;
-    transform: rotate(38deg);
-    position: absolute;
-    top: 120px;
-    left: 200px
-}
-.arrows .arrow-3 .block-1{
-    width: 20px;
-    height: 5px;
-    left: 13px;
-    border: 2px solid rgb(215, 214, 214);
+.wrapper-block-4 .block::after{
+    content: "";
     background-color: rgb(215, 214, 214);
+    margin-top: 4px;
+    left: -2px;
+    width: 39px;
+    height:  5px;
     position: absolute;
-    transform: rotate(141deg);
 }
-.arrows .arrow-3 .block-2{
-    left: 15px;
-    width: 40px;
-    height: 5px;
-    border: 2px solid rgb(215, 214, 214);
-    background-color: rgb(215, 214, 214);
-    position: absolute;
-    transform: rotate(141deg);
-}
-.arrows .arrow-4{
-    width: 12px;
-    height: 20px;
-    border-right: 4px solid #40078c;
-    border-bottom: 4px solid #40078c;
-    transform: rotate(38deg);
-    position: absolute;
-    top: 160px;
-    left: 200px
-}
-.arrows .arrow-4 .block-1{
-    width: 20px;
-    height: 5px;
-    left: 13px;
-    border: 2px solid rgb(215, 214, 214);
-    background-color: rgb(215, 214, 214);
-    position: absolute;
-    transform: rotate(141deg);
-}
-.arrows .arrow-4 .block-2{
-    left: 15px;
-    width: 40px;
-    height: 5px;
-    border: 2px solid rgb(215, 214, 214);
-    background-color: rgb(215, 214, 214);
-    position: absolute;
-    transform: rotate(141deg);
-}
+
 
 /* ================================== */
 
 .frame-3{
-    display: none;
+    /* display: none; */
     font-family: 'Roboto', sans-serif;
     width: 300px;
     height: 250px;
@@ -488,7 +618,7 @@
     text-align: center;
     margin: 12px 0px;
     animation: fadeIn;
-    animation-duration: 0.8s;
+    animation-duration: 2s;
 }
 @keyframes slidein {
     from {
@@ -594,22 +724,6 @@
     animation: fadeIn 0.5s both, slidein-1 0.5s forwards;
 }
 .frame-3 .title-2{
-    /* background-color: transparent;
-    box-shadow: 0px 18px 0px 7px rgb(254, 142, 63);;
-        border-radius: 60%;
-        margin-top: 1%;
-        cursor: pointer;
-        height: 6%;
-        border-bottom-right-radius: 65%;
-        border-bottom-left-radius: 65%;
-        position: absolute;
-        left: 4%;
-        width: 11%;
-        content: "";
-        transform: rotateZ(180deg); */
-        /* animation: slidein 0.8s forwards; */
-}
-.frame-3 .title-2{
     position: absolute;
     top: 7em;
     left: 2.5em;
@@ -687,13 +801,13 @@
     transform: translate(75px, 7px) rotate(26deg);
 }
 .title-1 span{
-    font-size: 15px;
+    font-size: 18px;
     display: inline-block;
     position: absolute;
     top: -1em;
 }
 .title-2 span{
-    font-size: 15px;
+    font-size: 18px;
     display: inline-block;
     position: absolute;
     top: -1em;
@@ -711,25 +825,9 @@
 
     }
 }
-/* .frame-3 .title-1:hover{
-    background-color: transparent;
-    box-shadow: 0px 18px 0px 7px #40078c;
-        border-radius: 60%;
-        margin-top: 1%;
-        cursor: pointer;
-        height: 6%;
-        border-bottom-right-radius: 65%;
-        border-bottom-left-radius: 65%;
-        position: absolute;
-        left: 4%;
-        width: 11%;
-        content: "";
-        transform: rotateZ(180deg);
-} */
-
 /* ========================== */
 .frame-4{
-    display: none;
+    /* display: none; */
     font-family: 'Roboto', sans-serif;
     width: 300px;
     height: 250px;
@@ -786,9 +884,278 @@
 .frame-5 .im-1{
     position: absolute;
     top: 64px;
-    left: 64px;  
-    animation: book-1 2s; 
+    left: 72px;  
+    animation: flipInY  2s; 
 }
+.shapes-2{
+    position: absolute;
+    top: -23px;
+}
+
+/* shapes-confetti */
+.big-circle-5{
+    position: absolute;
+    top: 112px;
+    left: 240px;
+    width: 10px;
+    height: 10px; 
+    background-color: #0bf6fd;
+    border-radius: 50%;
+    animation: pulse 2s;
+}
+.circle-5{
+    position: absolute;
+    top: 190px;
+    left: 27px;
+    width: 8px;
+    height: 8px; 
+    background-color: #0bf6fd;
+    border-radius: 50%;
+    animation: pulse 2s;
+}
+.circle-1-5{
+    position: absolute;
+    top: 212px;
+    left: 205px;
+    width: 8px;
+    height: 8px; 
+    background-color: #0bf6fd;
+    border-radius: 50%;
+    animation: pulse 2s;
+}
+.dark-circle-5{
+    position: absolute;
+    top: 175px;
+    left: 50px;
+    width: 5px;
+    height: 5px; 
+    background-color: #4f2f75;
+    border-radius: 50%;
+    animation: pulse 2s;
+}
+.dark-circle-1-5{
+    position: absolute;
+    top: 215px;
+    left: 190px;
+    width: 5px;
+    height: 5px; 
+    background-color: #4f2f75;
+    border-radius: 50%;
+    animation: pulse 2s;
+}
+.rectangel-1-5{
+    position: absolute;
+    top: 217px;
+    left: 21px;
+    width: 18px;
+    height: 3px;
+    background: #0bf6fd;
+    transform: rotate(150deg);  
+    animation: pulse 2s; 
+}
+.rectangel-2-5{
+    position: absolute;
+    top: 200px;
+    left: 237px;
+    width: 18px;
+    height: 3px;
+    background: #0bf6fd; 
+    transform: rotate(45deg); 
+    animation: pulse 2s;
+}
+.rectangel-3-5{
+    position: absolute;
+    top: 90px;
+    left: 25px;
+    width: 18px;
+    height: 3px;
+    background: #0bf6fd; 
+    transform: rotate(65deg);
+    animation: pulse 2s;  
+}
+.rectangel-4-5{
+    position: absolute;
+    top: 162px;
+    left: 17px;
+    width: 18px;
+    height: 3px;
+    background: #0bf6fd; 
+    transform: rotate(315deg);
+    animation: pulse 2s; 
+}
+.rectangel-5-5{
+    position: absolute;
+    top: 106px;
+    left: 260px;
+    width: 18px;
+    height: 3px;
+    background: #0bf6fd;
+    transform: rotate(150deg); 
+    animation: pulse 2s;  
+}
+.dark-rec-1-5{
+    position: absolute;
+    top: 80px;
+    left: 240px;
+    width: 14px;
+    height: 4px;
+    background: #4f2f75;
+    transform: rotate(310deg);
+    animation: pulse 2s;  
+}
+.dark-rec-2-5{
+    position: absolute;
+    top: 130px;
+    left: 15px;
+    width: 14px;
+    height: 4px;
+    background: #4f2f75;
+    transform: rotate(170deg);  
+    animation: pulse 2s;
+}
+.dark-rec-3-5{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    width: 14px;
+    height: 4px;
+    background: #4f2f75;
+    transform: rotate(85deg);   
+    animation: pulse 2s;
+}
+.dark-rec-4-5{
+    position: absolute;
+    top: 225px;
+    left: 32px;
+    width: 14px;
+    height: 4px;
+    background: #4f2f75;
+    transform: rotate(105deg);  
+    animation: pulse 2s;  
+}
+.dark-rec-5-5{
+    position: absolute;
+    top: 175px;
+    left: 225px;
+    width: 14px;
+    height: 4px;
+    background: #4f2f75;
+    transform: rotate(35deg); 
+    animation: pulse 2s;
+}
+.curved-1-5{
+    position: absolute;
+    top: 133px;
+    left: 34px;
+    width: 18px;
+    height: 8px;
+    background-color: transparent;
+    border-right: 2.5px solid #04bbd4;
+    border-left: 2.5px solid #04bbd4;
+    border-bottom: 2.5px solid #04bbd4;
+    border-radius: 0px 0px 150px 150px;
+    transform: rotate(310deg);
+    animation: pulse 2s;
+}
+.curved-2-5{
+    position: absolute;
+    top: 108px;
+    left: 220px;
+    width: 18px;
+    height: 8px;
+    background-color: transparent;
+    border-right: 2.5px solid #04bbd4;
+    border-left: 2.5px solid #04bbd4;
+    border-bottom: 2.5px solid #04bbd4;
+    border-radius: 0px 0px 150px 150px;
+    transform: rotate(250deg);
+    animation: pulse 2s;
+}
+.curved-3-5{
+    position: absolute;
+    top: 175px;
+    left: 244px;
+    width: 18px;
+    height: 8px;
+    background-color: transparent;
+    border-right: 2.5px solid #04bbd4;
+    border-left: 2.5px solid #04bbd4;
+    border-bottom: 2.5px solid #04bbd4;
+    border-radius: 0px 0px 150px 150px;
+    transform: rotate(240deg);
+    animation: pulse 2s;
+}
+.curved-4-5{
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    width: 18px;
+    height: 8px;
+    background-color: transparent;
+    border-right: 2.5px solid #04bbd4;
+    border-left: 2.5px solid #04bbd4;
+    border-bottom: 2.5px solid #04bbd4;
+    border-radius: 0px 0px 150px 150px;
+    transform: rotate(310deg);
+    animation: pulse 2s;
+}
+.curved-5-5{
+    position: absolute;
+    top: 200px;
+    left: 32px;
+    width: 18px;
+    height: 8px;
+    background-color: transparent;
+    border-right: 2.5px solid #04bbd4;
+    border-left: 2.5px solid #04bbd4;
+    border-bottom: 2.5px solid #04bbd4;
+    border-radius: 0px 0px 150px 150px;
+    transform: rotate(45deg);
+    animation: pulse 2s;
+}
+.light-curve-1-5{
+    position: absolute;
+    top: 210px;
+    left: 70px;
+    width: 12px;
+    height: 5.5px;
+    background-color: transparent;
+    border-right: 2px solid #1ee9ff;
+    border-left: 2px solid #1ee9ff;
+    border-bottom: 2px solid #1ee9ff;
+    border-radius: 0px 0px 150px 150px;
+    transform: rotate(245deg);
+    animation: pulse 2s;
+}
+.light-curve-2-5{
+    position: absolute;
+    top: 75px;
+    left: 205px;
+    width: 12px;
+    height: 5.5px;
+    background-color: transparent;
+    border-right: 2px solid #1ee9ff;
+    border-left: 2px solid #1ee9ff;
+    border-bottom: 2px solid #1ee9ff;
+    border-radius: 0px 0px 150px 150px;
+    transform: rotate(40deg);
+    animation: pulse 2s;
+}
+.light-curve-3-5{
+    position: absolute;
+    top: 200px;
+    left: 225px;
+    width: 12px;
+    height: 5.5px;
+    background-color: transparent;
+    border-right: 2px solid #1ee9ff;
+    border-left: 2px solid #1ee9ff;
+    border-bottom: 2px solid #1ee9ff;
+    border-radius: 0px 0px 150px 150px;
+    transform: rotate(45deg); 
+    animation: pulse 2s;
+}
+    
 @keyframes book-1{
     from{
         opacity: 0;
@@ -814,14 +1181,14 @@
 .frame-5 .im-2{
     position: absolute;
     top: 66px;
-    left: 143px;
-    animation: book 2s, flipOutY 2s;   
+    left: 151px;
+    animation: book 1s, flipOut;   
 }
 
 
 /* =================================== */
 .frame-6{
-    display: none;
+    /* display: none; */
     font-family: 'Roboto', sans-serif;
     width: 300px;
     height: 250px;
@@ -836,6 +1203,21 @@
 }
 .frame-6 span{
     color: #40078c;  
+}
+.frame-6 .btn-4{
+    /* display: none; */
+    background-color: transparent;
+    border: 2px solid #04bbd4;
+    border-radius: 15px;
+    color: #04bbd4;
+}
+.frame-6 .btn-4:hover{
+    outline: none;
+    color: #fff;
+    background-color: #04bbd4;
+    border: none;
+    border-radius: 15px;
+
 }
 /* colors: dark font - rgb(86, 8, 146); //rgba(78,0,141,255);
 orange thing - rgb(254, 142, 63);
